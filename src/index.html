@@ -9,59 +9,78 @@
 <body>
     <header>
         <h1>Cookie</h1>
-        <!-- no skip link in navigation -->
         <nav>
             <ul>
-                <!-- no focus indicator -->
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#veterinaires">Vétérinaires</a></li>
                 <li><a href="#jouets">Jouets</a></li>
                 <li><a href="#conseils">Nos Conseils</a></li>
             </ul>
+            <select id="language-picker">
+                <!-- missing lang -->
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
         </nav>
     </header>
     <section id="accueil">
-        <h2>À propos</h2>
+        <h2 class="section-title a-propos">À propos</h2>
         <img src="assets/cookie_profile_picture.jpg" alt="Cookie" class="profile-pic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section id="voyages">
-        <h2>Voyages</h2>
-        <div class="voyage">
-            <!-- alt texts not representative -->
-            <img src="assets/asset_mexique.jpg" alt="Voyage au Mexique"> 
-            <p>Mexique</p>
-        </div>
-        <div class="voyage">
-            <img src="assets/asset_usa.jpg" alt="Voyage aux USA">
-            <p>U.S.A</p>
-        </div>
-        <div class="voyage">
-            <img src="assets/asset_espagne.jpg" alt="Voyage en Espagne">
-            <p>Espagne</p>
-        </div>
-        <div class="voyage">
-            <img src="assets/asset_tahiti.jpg" alt="Voyage à Tahiti">
-            <p>Tahiti</p>
+        <!-- contrast couleurs et indicateur de focus -->
+        <h2 class="section-title voyages">Voyages</h2>
+        <!-- no buttons to make carrousel slide to the right or left -->
+        <div class="carousel">
+            <div class="voyage card">
+                <img src="assets/asset_mexique.jpg" alt="Voyage au Mexique">
+                <p>⭐⭐⭐</p>
+                <p>Mexique</p>
+                <p>The trip was awesome lorem ipsum bla bla bla bla</p>
+                <a href="https://en.wikipedia.org/wiki/Travel">Read more</a>
+                <!-- read more not explicit enough -->
+            </div>
+            <div class="voyage card">
+                <img src="assets/asset_usa.jpg" alt="Voyage aux United States">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>United States</p>
+                <p>The trip was awesome lorem ipsum bla bla bla bla</p>
+                <a href="https://en.wikipedia.org/wiki/Travel">Read more</a>
+            </div>
+            <div class="voyage card">
+                <img src="assets/asset_espagne.jpg" alt="Voyage en Espagne">
+                <!-- stars read incorrectly -->
+                 <!-- meaningful sequence broken -->
+                  <!-- no heading on card title -->
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Espagne</p>
+                <p>The trip was awesome lorem ipsum bla bla bla bla</p>
+                <a href="https://en.wikipedia.org/wiki/Travel">Read more</a>
+            </div>
+            <div class="voyage card">
+                <img src="assets/asset_tahiti.jpg" alt="Voyage à Tahiti">
+                <p>⭐⭐⭐⭐</p>
+                <p>Tahiti</p>
+                <p>The trip was awesome lorem ipsum bla bla bla bla</p>
+                <a href="https://en.wikipedia.org/wiki/Travel">Read more</a>
+            </div>
         </div>
     </section>
     <section id="reseaux">
-        <h2>Réseaux</h2>
-        <!-- p instead of <ul> -->
-        <p> 
+        <h2 class="section-title reseaux">Réseaux</h2>
+        <p>
             <a href="https://instagram.com/cookiethefluffyrabbit">Instagram</a> |
             <a href="https://youtube.com/cookiethefluffyrabbit">YouTube</a> |
             <a href="https://linkedin.com/cookie_business">LinkedIn</a>
         </p>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
+        <h2 class="section-title contact">Contact</h2>
         <form>
-            <!-- required fields not marked visually as required -->
             <label for="email">Email:</label>
+            <!-- placeholder -->
             <input type="email" id="email" name="email" required>
             <label for="telephone">Téléphone:</label>
             <input type="tel" id="telephone" name="telephone" required>
@@ -70,7 +89,6 @@
                 <option value="france">France</option>
                 <option value="other">Other</option>
             </select>
-            <!-- not grouped in fieldset legend -->
             <label>Avez-vous un lapin?</label>
             <input type="radio" id="oui" name="hasRabbit" value="oui" required>
             <label for="oui">Oui</label>

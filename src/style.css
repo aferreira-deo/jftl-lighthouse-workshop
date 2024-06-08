@@ -27,6 +27,30 @@ nav ul li a {
     color: #000;
 }
 
+nav select {
+    margin-left: 20px;
+}
+
+.section-title {
+    margin-bottom: 0;
+}
+
+.a-propos {
+    color: #FFD700; /* Gold */
+}
+
+.voyages {
+    color: #1E90FF; /* Dodger Blue */
+}
+
+.reseaux {
+    color: #32CD32; /* Lime Green */
+}
+
+.contact {
+    color: #FF69B4; /* Hot Pink */
+}
+
 section {
     padding: 2em;
 }
@@ -37,17 +61,27 @@ section {
     border-radius: 50%;
 }
 
-.voyage {
-    display: inline-block;
-    margin: 10px;
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.voyage img {
-    width: 200px;
+.card img {
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
 }
 
 form {
@@ -76,4 +110,10 @@ form button {
 
 form button:hover {
     background-color: #ffaa00;
+}
+
+/* Pink underline focus indicator */
+a:focus, input:focus, select:focus, button:focus {
+    outline: none;
+    border-bottom: 2px solid #FF69B4;
 }
