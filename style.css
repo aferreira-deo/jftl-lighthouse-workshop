@@ -8,3 +8,139 @@ body {
 h1 {
     color: #333;
 }
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav select {
+    margin-left: 20px;
+}
+
+.section-title {
+    margin-bottom: 0;
+}
+
+.a-propos {
+    color: #FFD700; /* Gold */
+}
+
+.voyages {
+    color: #1E90FF; /* Dodger Blue */
+}
+
+.reseaux {
+    color: #32CD32; /* Lime Green */
+}
+
+.contact {
+    color: #FF69B4; /* Hot Pink */
+}
+
+section {
+    padding: 2em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form input, form select {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+form button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #ffaa00;
+}
+
+/* Pink underline focus indicator */
+a:focus, input:focus, select:focus, button:focus {
+    outline: none;
+    border-bottom: 2px solid #FF69B4;
+}
+
+/* Screen reader only text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
