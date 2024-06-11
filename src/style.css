@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #ffcc00;
+    background-color: #1b00b1;
     padding: 1em;
     text-align: center;
 }
@@ -36,19 +36,19 @@ nav select {
 }
 
 .a-propos {
-    color: #FFD700; /* Gold */
+    color: #1b00b1; /* Gold */
 }
 
 .voyages {
-    color: #1E90FF; /* Dodger Blue */
+    color: #1b00b1; /* Dodger Blue */
 }
 
 .reseaux {
-    color: #32CD32; /* Lime Green */
+    color: #1b00b1; /* Lime Green */
 }
 
 .contact {
-    color: #FF69B4; /* Hot Pink */
+    color: #1b00b1; /* Hot Pink */
 }
 
 section {
